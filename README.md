@@ -1,10 +1,8 @@
-# Clean Blog Hexo
+# Hexo Theme Clean
 
-![](http://www.codeblocq.com/img/hexo-theme-thumbnail/CleanBlog.png)
+![](https://i.imgur.com/mHzxF6j.png)
 
-Hexo implementation of [Clean Blog](http://blackrockdigital.github.io/startbootstrap-clean-blog/index.html)
-
-Clean blog is a full featured, responsive Hexo theme. [Demo here](http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/).
+This is a theme base on [Hexo Clean Blog Theme](https://github.com/klugjo/hexo-theme-clean-blog), and modfy for more feature and coding style.
 
 ## Features
 

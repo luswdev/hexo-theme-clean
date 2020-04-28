@@ -1,14 +1,4 @@
-# Header
-menu:
-  Linux: /tags/Linux
-  RT-Thread: /tags/RT-Thread
-  XV6: /tags/XV6
-  C Lang: /tags/Clang
-  GitHub:
-    url: https://github.com/luswdev
-    icon: fab fa-github
-
-# Footer
+# Footer menu
 footer_menu:
   Home: /
   Archives: /archives
@@ -22,19 +12,16 @@ menu_title:
 # URL of the Home page image
 index_cover: /img/home-bg.jpg
 
+# Archive page start year
 start_year: 2018
 
-toc:
-  enable: true
-  heading: h2, h3, h4
-  collapseDepth: 0
-  showToggleBtn: true
-b2t: true
-t2b: false
+# Enable post toc
+toc: true
 
 # Default post title
 default_post_title: Untitled
 
+# Post meta
 postInfo:
   wordCount: true
   min2read: false
@@ -44,11 +31,7 @@ postInfo:
 comments:
   # Disqus comments
   disqus_shortname: 
-  # Facebook comments
-  facebook:
-    appid:
-    comment_count: 5
-    comment_colorscheme: light
+  # Gitalk
   gitalk:
     enable: true
     owner: 'luswdev' 
@@ -62,14 +45,12 @@ comments:
 # Google Analytics Tracking ID
 google_analytics: UA-158078787-1
 
+# Busuanzi Staticals
 busuanzi:
   enable: true
   cdn: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
   totalTraffic: false
   totalNumberOfvisitors: false 
-
-# Addthis ID
-addthis:
 
 # set your own favicon
 favicon: /img/favicon.png
@@ -83,6 +64,7 @@ gitlab_url:
 linkedin_url: https://www.linkedin.com/in/callum-lu-0aa77066/
 mailto: info@lusw.dev
 
+# Enable post mathjax
 mathjax:
   enable: true
   cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML
