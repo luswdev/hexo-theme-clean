@@ -60,12 +60,12 @@ favicon: /img/favicon.png
 twitter_url:
 twitter_handle:
 facebook_url:
-github_url: https://github.com/luswdev
+github_url:
 gitlab_url:
-linkedin_url: https://www.linkedin.com/in/callum-lu-0aa77066/
-mailto: info@lusw.dev
+linkedin_url: 
+mailto: 
 
 # Enable post mathjax
 mathjax:
-  enable: true
+  enable: false
   cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML
