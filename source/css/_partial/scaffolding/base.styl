@@ -1,0 +1,71 @@
+/*
+ * base.styl
+ */
+
+*:focus {
+    outline: 0 !important;
+}
+
+body {
+    serif();
+    font-size: 18px;
+    color: gray-dark;
+    webkit-tap-highlight-color: brand-primary;
+}
+
+p {
+    line-height: 1.5;
+    margin: 30px 0;
+}
+
+p, li {
+    a {
+        text-decoration: underline;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    sans-serif();
+    font-weight: 800;
+}
+
+a {
+    color: gray-dark;
+    &:hover, &:focus {
+        color: brand-primary;
+    }
+}
+a img {
+    &:hover, &:focus {
+        cursor: zoom-in
+    }
+}
+
+hr.small {
+    max-width: 100px;
+    margin: 15px auto;
+    border-width: 4px;
+    border-color: white;
+}
+
+::-moz-selection {
+    color: white;
+    text-shadow: none;
+    background: brand-primary;
+}
+
+::selection {
+    color: white;
+    text-shadow: none;
+    background: brand-primary;
+}
+
+img::selection {
+    color: white;
+    background: transparent;
+}
+
+img::-moz-selection {
+    color: white;
+    background: transparent;
+}

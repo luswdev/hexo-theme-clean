@@ -1,0 +1,20 @@
+<div class="post-preview post-preview-index">
+    <a href="<%- url_for(post.path) %>">
+        <h2 class="post-title">
+            <%- post.title || theme.default_post_title || "Untitled" %>
+        </h2>
+        <% if (post.subtitle && post.subtitle.length) { %>
+            <h3 class="post-subtitle">
+                <%- post.subtitle %>
+            </h3>
+        <% } %>
+    </a>
+    <p class="post-meta">
+        <!-- Date and Author -->
+        <% if(post.author) { %>
+            Posted by <%- post.author %> on
+        <% } %>
+        <%= post.date.format(config.date_format) %>
+    </p>
+</div>
+<hr>

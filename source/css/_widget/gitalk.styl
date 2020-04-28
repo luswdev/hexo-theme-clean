@@ -1,0 +1,67 @@
+/*
+ * gitalk.styl
+ */
+
+#gitalk-container {
+    .gt-link {
+        border-bottom: 0;
+    }
+
+    .gt-link-counts {
+        color: #6c757d;
+    }
+
+    .gt-header-controls {
+        .gt-ico {
+            color: #6c757d;
+
+            .gt-svg svg{
+                fill: #6c757d;
+                margin-top: -9px;
+            }
+        }
+        .gt-btn{
+            color: gray-dark;
+            background-color: unset;
+            border-color: #dee2e6;
+
+            &:hover, &:focus {
+                background-color: brand-primary;
+                border-color: brand-primary;
+                color: white
+            }
+        }
+    }
+
+    .gt-user .gt-user-inner .gt-ico svg {
+        margin-top: -9px;      
+    }
+
+    .gt-user .gt-user-inner.is--poping .gt-ico svg {
+        fill: #404040;   
+    }
+
+    .gt-popup {
+        .gt-action:not(is--active) {
+            color: gray-dark;
+
+            .gt-action-text {
+                color: gray-dark;
+            }
+        }
+
+        .gt-action.is--active {
+            .gt-action-text {
+                color: brand-primary;
+            }
+
+            &:before {
+                background-color: brand-primary;
+            }
+        }
+
+        .gt-copyright .gt-link {
+            color: gray-dark;
+        }
+    }
+}

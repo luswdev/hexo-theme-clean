@@ -1,0 +1,14 @@
+<div class="post-preview post-preview-archive-tag">
+    <a href="<%- url_for(post.path) %>">
+        <h1 class="post-title">
+            <%- post.title || theme.default_post_title || "Untitled" %>
+        </h1>
+    </a>
+    <p class="post-meta">
+        <!-- Date and Author -->
+        <% if(post.author) { %>
+            Posted by <%- post.author %> on
+        <% } %>
+        <%= post.date.format(config.date_format) %>
+    </p>
+</div>

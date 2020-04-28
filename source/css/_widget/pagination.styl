@@ -1,0 +1,43 @@
+/*
+ * pagination.styl
+ */
+
+.pagination {
+    margin 20px 0 0
+    
+    li {
+        > a.page-link, > span {
+            sans-serif();
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            padding: 15px 25px;
+            background-color: white;
+            border-radius: 0;
+            color: gray-dark;
+        }
+
+        > a.page-link:hover, > a.page-link:focus {
+            color: white;
+            background-color: brand-primary;
+            border: 1px solid brand-primary;
+        }
+    }
+
+    .disabled {
+        > a, > a:hover, > a:focus, > span {
+            color: gray;
+            background-color: gray-dark;
+            cursor: not-allowed;
+        }
+    }
+
+    .next>a, .next>span {
+        float: right;
+    }
+
+    .page-item .page-link  {
+        border-radius: 0;
+    }
+}

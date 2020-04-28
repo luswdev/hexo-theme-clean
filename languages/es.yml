@@ -1,0 +1,11 @@
+prev: Anterior
+next: Siguiente
+comment: Comentarios
+archive_a: Archivo
+archive_b: "Archivo: %s"
+expandAll: Expandir todo
+reexpandAll: Contraer todo
+b2t: Volver arriba
+g2b: Ir al fondo
+category_this: "Categoría: %s"
+tag_this: "Etiqueta: %s:"

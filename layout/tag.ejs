@@ -1,0 +1,34 @@
+<header class="intro-header" style="background-image: url('<%- theme.index_cover %>')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                <div class="site-heading text-center text-white">
+                    <h1><%- __('tag_this', page.tag) %></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container page-tags">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1 text-center">
+            <% site.tags.each( function (tag) { %>
+                <%- partial('_widget/tag-item', {tag: tag}) %>
+            <% }); %>
+        </div>
+        <% if (page.posts.length > 0) { %>
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                <hr class="tag-preview-hr">
+                <% page.posts.each( function (post) { %>
+                    <%- partial('_partial/pages/tag-preview', {post: post}) %>
+                <% }); %>
+                <div class="archive-before-pagination"></div>
+                <%- partial('_partial/pagination') %>
+            </div>
+        <% } %>
+    </div>
+</div>
+
+

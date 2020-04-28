@@ -1,0 +1,8 @@
+<ul class="pagination d-block text-center">
+    <% if (page.prev){ %>
+        <li class="previous page-item d-inline"><a href="<%- config.root %><%- page.prev_link %>" class="page-link float-left">&larr;  <%- __('next')%></a></li>
+    <% } %>
+    <% if (page.next){ %>
+        <li class="next page-item d-inline"><a href="<%- config.root %><%- page.next_link %>" class="page-link float-right"><%- __('prev')%>  &rarr;</a></li>
+    <% } %>
+</ul>

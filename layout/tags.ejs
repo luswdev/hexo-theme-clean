@@ -1,0 +1,24 @@
+<header class="intro-header" style="background-image: url('<%- theme.index_cover %>')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                <div class="site-heading text-center text-white">
+                    <h1><%- page.title %></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container page-tags text-center">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <% site.tags.each( function (tag) { %>
+                <%- partial('_widget/tag-item', {tag: tag}) %>
+            <% }); %>
+        </div>
+    </div>
+</div>
+
+

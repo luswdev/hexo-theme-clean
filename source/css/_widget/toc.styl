@@ -1,0 +1,80 @@
+/*
+ * toc.styl
+ */
+
+
+.ui-toc.dropup {
+    position: fixed;
+    bottom: 20px;
+    z-index: 998;
+
+    .toc-btn {
+        font-size: 14px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        padding: 9px 15px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        border-radius: 0;
+        position: fixed
+        right: 3%
+        bottom: 3%
+        z-index: 10
+        width: 40px;
+        height: 40px;
+        
+        &:hover {
+            color: #fff;
+            background-color: brand-primary;
+            border-color: brand-primary;
+        }
+
+        i {
+            margin-left: -2px;
+        }
+    }
+
+    &.show {
+        button {
+            background: brand-primary;
+            border-color: brand-primary;
+            color: white
+        }
+    }
+
+    .dropdown-menu {
+        right: 0;
+        left: auto;
+        margin-bottom: calc(3%+50px)
+        width: 15vw;
+        box-shadow: 0 6px 12px rgba( 0, 0, 0, .175 );
+
+        #toc-content {
+            sans-serif();
+            font-size: .8em
+            line-height: 1.6;
+            &.expand {
+                ol {
+                    max-height: unset;
+                }
+            }
+            ol {
+                transition: none;
+                padding-inline-start: 20px;
+            }
+            li.toc-list-item {
+                list-style: none;
+                a {
+                    text-decoration: none;
+                }
+                &.is-active-li{
+                    serif();
+                }
+            }
+        }
+
+        .toc-menu {
+            font-size: .8em;
+        }
+    }
+}

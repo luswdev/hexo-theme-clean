@@ -1,0 +1,34 @@
+/*
+ * tags.styl
+ */
+
+.page-tags {
+    .tag-preview-hr {
+        hr-bold();
+    }
+
+    .post-preview {
+        a {
+            .post-title {
+                font-size: 25px;
+            }
+        }
+
+        .post-meta {
+            color: gray;
+            font-size: 18px;
+            font-style: italic;
+            margin-top: 0;
+
+            > a {
+                text-decoration: none;
+                color: gray-dark;
+
+                &:hover, &:focus {
+                    color: brand-primary;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+/*
+ * mixins.styl
+ */
+
+transition-all() {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+background-cover() {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+serif() {
+    font-family: 'Lora', 'Times New Roman', serif;
+}
+
+
+sans-serif() {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+remove-spacer() {
+    p, ul, ol, table, pre, blockquote {
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+hr-bold() {
+    height: .25em;
+    padding: 0;
+    margin: 24px 0;
+    background-color: #e7e7e7;
+    border: 0;
+    border-radius: .25em;
+}

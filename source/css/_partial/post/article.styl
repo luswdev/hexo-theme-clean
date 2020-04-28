@@ -1,0 +1,118 @@
+/*
+ * article.styl
+ */
+
+article {
+    .container {
+        .row {
+            h2 {
+                border-bottom: 1px solid #eee;
+                padding-bottom: .3em;
+            }
+
+            .header-anchor {
+                color: #ddd;
+                padding-right: 5px
+            }
+
+            hr:not(.block-hr) {
+                height: .25em;
+                padding: 0;
+                margin: 24px 0;
+                background-color: #e7e7e7;
+                border: 0;
+                border-radius: .25em;
+            }
+            // Responsive Images
+            img {
+                max-width: 100% !important;
+                height: auto;
+                display: inline-block;
+            }
+            .img-caption {
+                font-size: 14px;
+                margin: 0;
+                padding: 10px;
+            }
+            // Video Containers
+            .video-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                padding-top: 30px;
+                height: 0;
+                overflow: hidden;
+                
+                iframe, object, embed {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    margin-top: 0;
+                }
+            }
+
+            .table-responsive {
+                margin-top: 15px;
+
+                table.table {
+                    width: unset;
+
+                    thead>tr>td, thead>tr>th {
+                        border-bottom-width: 1px;
+                    }
+
+                    tr:nth-child(2n) {
+                        background-color: #f8f8f8;
+                    }
+                }
+            }
+
+            blockquote {
+                remove-spacer();
+                font-family: font-serif;
+                font-size: 16px;
+                color: #777;
+                padding: 0 1em;
+                text-align: left;
+                border-left: .25em solid #ddd;
+
+                h2, h3, h4, h5, h6{
+                    margin-bottom: 0;
+                    border-bottom: initial;
+                    padding-top: 0 !important;
+                }
+
+                footer {
+                    border-top: none;
+                    font-size: 0.8em;
+                    line-height: 1;
+                    margin: 20px 0 0;
+                    padding-top: 0;
+                }
+
+                cite {
+                    &:before {
+                        content: '—';
+                        color: #ccc;
+                        padding: 0 0.5em;
+                    }
+                }
+            }
+
+            .pullquote {
+                    float: right;
+                    border: none;
+                    padding: 0;
+                    margin: 1em 0 0.5em 1.5em;
+                    text-align: left;
+                    width: 45%;
+                    font-size: 1.5em;
+
+                &.left {
+                    float: left;
+                }
+            }
+        }
+    }
+}

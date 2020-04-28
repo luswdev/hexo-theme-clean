@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html <% if(config.language) { %>lang="<%= config.language %>"<% } else { %>lang="en"<% }%>>
+<head>
+    <%- partial('_partial/head') %>
+
+    <!-- Google Analytics -->
+    <%- partial('_third-part/google-analytic') %>
+</head>
+<!-- Head tag -->
+
+<body>
+
+    <!-- Menu -->
+    <%- partial('_partial/menu') %>
+
+    <!-- Main Content -->
+    <%- body %>
+
+    <!-- Footer -->
+    <%- partial('_partial/footer') %>
+
+    <!-- After footer scripts -->
+    <%- partial('_scripts/index') %>
+
+    <!-- Search Modal -->
+    <%- partial('_widget/search-modal') %>
+
+</body>
+</html>

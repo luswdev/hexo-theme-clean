@@ -1,0 +1,65 @@
+/*
+ * index.styl
+ */
+ 
+.page-index {
+    .post-preview {
+        > a {
+            color: gray-dark;
+
+            &:hover, &:focus {
+                text-decoration none;
+                color brand-primary;
+            }
+
+            > .post-title {
+                font-size: 36px;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+
+            > .post-subtitle {
+                margin: 0;
+                font-weight: 300;
+                margin-bottom: 10px;
+            }
+        }
+
+        > .post-meta {
+            color: gray;
+            font-size: 18px;
+            font-style: italic;
+            margin-top: 0;
+
+            > a {
+                text-decoration: none;
+                color: gray-dark;
+
+                &:hover, &:focus {
+                    color: brand-primary;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &.post-pin {
+            i {
+                font-size: .5em;
+                transform: rotate(-45deg);
+                vertical-align: middle;
+            }
+        } 
+    }
+
+    .post-pin-hr {
+        &:last-child {
+            hr-bold();
+        }
+    }
+
+    .post-all {
+        hr:last-child  {
+            border: 0;
+        }    
+    }
+}

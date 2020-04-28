@@ -1,0 +1,24 @@
+<div class="btn-group archives-filter-group" role="group" aria-label="archives filter">
+    <% 
+    var year = parseInt(theme.start_year) || new Date().getFullYear();
+    var current_year = new Date().getFullYear();
+    var i;
+    %>
+
+    <% for (i = year; i<= current_year; i++) { %>
+        <% if (page.year == i) { %>
+            <button type="button" class="btn btn-info" disabled>
+                <%= i %>
+            </button>
+        <% } else { %>
+            <button type="button" class="btn btn-secondary" onclick="javascript:window,location.href = '/archives/<%- i %>'">
+                <%= i %>
+            </button>
+        <% } %>
+    <% } %>
+</div>
+<% if (!(page.year)) { %>
+    <button class="btn btn-info archives-filter-all" type="button" disabled>All</a>
+<% } else { %>
+    <a class="btn btn-secondary archives-filter-all" href="/archives/" role="button">All</a>
+<% } %> 

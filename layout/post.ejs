@@ -1,0 +1,47 @@
+<!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+<%
+    var cover = page.cover || theme.index_cover;
+%>
+<header class="intro-header" style="background-image: url('<%- cover %>')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 text-center">
+                <div class="post-heading text-white">
+                    <h1><%- page.title || theme.default_post_title || "Untitled" %></h1>
+                    <% if (page.subtitle && page.subtitle.length) { %>
+                    <h2 class="post-subheading">
+                        <%- page.subtitle %>
+                    </h2>
+                    <% } %>
+                    <%- partial('_partial/post/post-meta', {page: page}) %>  
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            
+            <!-- Post Main Content -->
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                <%- page.content %>
+            </div>
+
+            <!-- Post information -->
+            <%- partial('_partial/post/post-tags', {page: page}) %>
+            <%- partial('_partial/post/post-footer', {page: page}) %>
+
+            <!-- Comments -->
+            <%- partial("_third-part/gitalk.ejs", {page: page}) %>
+            <%- partial("_third-part/disqus.ejs") %>
+
+        </div>
+    </div>
+</article> 
+
+<%- partial('_widget/toc') %>
+<%- partial('_third-part/mathjax') %>

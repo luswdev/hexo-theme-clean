@@ -1,0 +1,22 @@
+<% if(theme.comments && theme.comments.gitalk && theme.comments.gitalk.enable){ %>
+    
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+        <div id="gitalk-container"></div>
+    </div>
+
+    <script>
+        let gitalk = new Gitalk({
+            clientID: '<%- theme.comments.gitalk.oauth.clientId %>',
+            clientSecret: '<%- theme.comments.gitalk.oauth.clientSecret %>',
+            repo: '<%- theme.comments.gitalk.repo %>',
+            owner: '<%- theme.comments.gitalk.owner %>',
+            admin: <%- JSON.stringify(theme.comments.gitalk.admin) %>,
+            id: '<%- date(page.date, 'YYYY-MM-DD HH:mm:ss') %>',
+            distractionFreeMode: false  // Facebook-like distraction free mode
+        });
+        gitalk.render('gitalk-container');
+    </script>
+<% } %>

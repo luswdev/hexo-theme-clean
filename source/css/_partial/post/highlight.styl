@@ -1,0 +1,150 @@
+/*
+ * highlight.styl
+ */
+
+code {
+    font-size: 85%;
+    color: unset;
+    background-color: rgba( 0, 0, 0, .04 );
+}
+
+figure.highlight {
+    background: #f7f7f7;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 16px;
+    border-radius: 2px;
+    text-shadow: 0 0 1px #fff;
+    line-height: 1.6;
+    overflow-x: auto
+    position: relative;
+    font-size: 16px;
+
+    figcaption {
+        color: color-meta;
+        font-family: font-mono;
+        font-weight: 800;
+        margin-bottom: 5px;
+        text-shadow: 0 0 1px #fff;
+
+        a {
+            position: absolute;
+            right: 15px;
+        }
+    }
+
+    pre {
+        overflow: unset;
+        border: none;
+        padding: 0;
+        margin: 0;
+        background: none;
+        font-size 85%;
+        color: unset;
+    }
+
+    table {
+        width: unset;
+        margin-top: 0;
+        border-spacing: 0;
+
+        .gutter {
+            color: color-meta;
+            padding-right: 8px;
+            border-right: 3px solid #6ce26c;
+            text-align: right;
+
+            .line {
+                color: #afafaf;
+            }
+        }
+
+        .code {
+            z-index: 1000;
+            color: #666;
+        }
+
+        .line {
+            height: 20px;
+        }
+
+        .line.marked {
+            background: #d6d6d6;
+        }
+    }
+
+    &.line_number .code {
+        padding-left: 15px;
+    }
+
+    /* GitHub Gist Theme */
+    pre {
+        .comment{
+            color: #969896;
+        }
+        .meta {
+            color: #333;
+        }
+
+        .variable,
+        .template-variable,
+        .strong,
+        .emphasis,
+        .quote {
+            color: #df5000;
+        }
+
+        .keyword,
+        .selector-tag,
+        .type {
+            color: #d73a49;
+        }
+
+        .literal,
+        .symbol,
+        .bullet,
+        .attribute {
+            color: #0086b3;
+        }
+
+        .section,
+        .name {
+            color: #63a35c;
+        }
+
+        .tag {
+            color: #333333;
+        }
+
+        .title,
+        .attr,
+        .selector-id,
+        .selector-class,
+        .selector-attr,
+        .selector-pseudo {
+            color: #6f42c1;
+        }
+
+        .addition {
+            color: #55a532;
+            background-color: #eaffea;
+        }
+
+        .deletion {
+            color: #bd2c00;
+            background-color: #ffecec;
+        }
+
+        .link {
+            text-decoration: underline;
+        }
+
+        .number {
+            color: #005cc5;
+        }
+
+        .string {
+            color: #032f62;
+        }
+    }
+}

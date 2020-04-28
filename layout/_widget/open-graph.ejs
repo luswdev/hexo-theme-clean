@@ -1,0 +1,29 @@
+<!--Description-->
+<%
+var description = '';
+
+if (page.description) {
+    description = page.description;
+} else if (config.description) {
+    description = config.description;
+} else if (page.excerpt) {
+    description = strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '');
+} else if (page.content) {
+    description = strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
+}
+%>
+
+<!--Open Graph Title-->
+<% if (page.title) { %>
+    <meta property="og:title" content="<%= page.title %>"/>
+<% } else { %>
+    <meta property="og:title" content="<%= config.title %>"/>
+<% } %>
+
+<!--Open Graph Description-->
+<% if (description) { %>
+    <meta property="og:description" content="<%= description %>"/>
+<% } %>
+
+<!--Open Graph Site Name-->
+<meta property="og:site_name" content="<%= config.title %>"/>

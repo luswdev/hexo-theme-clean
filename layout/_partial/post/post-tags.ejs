@@ -1,0 +1,16 @@
+<% if (page.tags && page.tags.length) { %>
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 post-tags">
+        <% if (page.tags && page.tags.length){ %>
+            tags: 
+            
+            <%
+                var tags = [];
+                page.tags.forEach(function(tag){
+                    tags.push('<a href="' + config.root + tag.path + '">#' + tag.name + '</a>');
+                });
+            %>
+        
+            <%- tags.join(' ') %>
+        <% } %>
+    </div>
+<% } %>

@@ -1,0 +1,56 @@
+/*
+ * search.styl
+ */
+
+.search-btn {
+    &:focus {
+        outline: none;
+    }
+
+    i {
+        color: #fff;
+    }
+}
+
+#searchModal {
+    top: 10%;
+
+    .modal-content {
+        max-height: 70vh;
+    }
+
+    .modal-body {
+        position: unset;
+    }
+
+    .search-result-list {
+        padding-left: 2px
+
+        li {
+            border-bottom: 1px solid #e5e5e5;
+        
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            a.search-result-title {
+                sans-serif();
+                text-decoration: none;
+                font-size: 1.4rem;
+                font-weight: 800;
+            }
+
+            p.search-result {
+                word-break: break-all;
+
+                .search-keyword {
+                    padding: 1px 5px 1px 4px;
+                    background-color: #f2f2f2;
+                    color: #e96900;
+                    font-style: normal;
+                    white-space: pre-wrap;
+                }
+            }
+        }
+    }
+}
