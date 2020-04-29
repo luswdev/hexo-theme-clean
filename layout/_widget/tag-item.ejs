@@ -1,6 +1,7 @@
 <% if (tag.name == page.tag) { %>
     <a href="<%- url_for(tag.path) %>" class="btn btn-info m-2">
         <%- tag.name || "Untitled" %>
+        <span class="badge badge-light"><%- tag.length || 0 %></span>
     </a>
 <% } else { %>
     <a href="<%- url_for(tag.path) %>" class="btn btn-outline-dark m-2">
