@@ -19,6 +19,7 @@ var searchFunc = function (path, search_id, content_id) {
                 var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
                 $resultContent.innerHTML = "";
                 if (this.value.trim().length <= 0) {
+                    $resultContent.innerHTML = '<div class="search-empty text-center text-muted p-5"><i class="far fa-meh"></i></div>';
                     return;
                 }
                 // perform local searching
@@ -77,7 +78,9 @@ var searchFunc = function (path, search_id, content_id) {
                         str += "</li>";
                     }
                 });
+
                 str += "</ul>";
+
                 $resultContent.innerHTML = str;
             });
         }
