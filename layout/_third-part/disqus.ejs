@@ -1,4 +1,4 @@
-<% if(theme.comments && theme.comments.disqus_shortname){ %>
+<% if(theme.comments && theme.comments.disqus.enable && theme.comments.disqus.shortname){ %>
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
         <div id="disqus_thread"></div>
     </div>
@@ -15,7 +15,7 @@
         */
         (function() { // DON'T EDIT BELOW THIS LINE
             var d = document, s = d.createElement('script');
-            var disqus_shortname = '<%= theme.comments.disqus_shortname %>';
+            var disqus_shortname = '<%= theme.comments.disqus.shortname %>';
             s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
             s.setAttribute('data-timestamp', +new Date());
             (d.head || d.body).appendChild(s);
