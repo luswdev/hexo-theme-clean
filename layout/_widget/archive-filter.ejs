@@ -18,7 +18,13 @@
     <% } %>
 </div>
 <% if (!(page.year)) { %>
-    <button class="btn btn-info archives-filter-all" type="button" disabled>All</a>
+    <button class="btn btn-info archives-filter-all" type="button" disabled>
+        All
+        <span class="badge badge-light"><%- site.posts.length || 0 %></span>
+    </button>
 <% } else { %>
-    <a class="btn btn-secondary archives-filter-all" href="/archives/" role="button">All</a>
+    <a class="btn btn-secondary archives-filter-all" href="/archives/" role="button">
+        All    
+        <span class="badge badge-light"><%- site.posts.length || 0 %></span>
+    </a>
 <% } %> 
