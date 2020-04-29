@@ -90,9 +90,9 @@
                 <ul class="copyright text-muted footer-menu list-inline">
                     <% for (var i in theme.footer.menu){ %>
                         <li class="list-inline-item">
-                            <a href="<%- theme.footer_menu[i].url ? url_for(theme.footer_menu[i].url) : url_for(theme.footer_menu[i]) %>">
+                            <a href="<%- theme.footer.menu[i].url ? url_for(theme.footer.menu[i].url) : url_for(theme.footer.menu[i]) %>">
                                 <% if (theme.footer.menu[i].icon) { %>
-                                    <i class="<%= theme.footer_menu[i].icon %> fa-stack-2x"></i>
+                                    <i class="<%= theme.footer.menu[i].icon %> fa-stack-2x"></i>
                                 <% } else { %>
                                     <%= i %>
                                 <% } %>
