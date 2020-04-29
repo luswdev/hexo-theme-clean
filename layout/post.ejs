@@ -35,9 +35,11 @@
             <%- partial('_partial/post/post-tags', {page: page}) %>
             <%- partial('_partial/post/post-footer', {page: page}) %>
 
-            <!-- Comments -->
-            <%- partial("_third-part/gitalk.ejs", {page: page}) %>
-            <%- partial("_third-part/disqus.ejs") %>
+            <% if (page.comments != false) { %>
+                <!-- Comments -->
+                <%- partial("_third-part/gitalk.ejs", {page: page}) %>
+                <%- partial("_third-part/disqus.ejs") %>
+            <% } %>
 
         </div>
     </div>
