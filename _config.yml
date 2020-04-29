@@ -1,10 +1,5 @@
-# Footer menu
-footer_menu:
-  Home: /
-  Archives: /archives
-  Tags: /tags
-  Categories: /categories
-  About: /about
+# Site config
+# ---------------------------------------------------------------
 
 # Title on top left of menu. Leave empty to use main blog title
 menu_title: 
@@ -12,60 +7,78 @@ menu_title:
 # URL of the Home page image
 index_cover: /img/home-bg.jpg
 
-# Archive page start year
+# Set your own favicon
+favicon: /img/favicon.png
+
+# Site start year
 # Default with current year
 start_year: 
 
-# Enable post toc
-toc: true
+# Post config
+# ---------------------------------------------------------------
 
 # Default post title
 default_post_title: Untitled
 
+# Enable post toc
+toc: true
+
 # Post meta
-postInfo:
-  wordCount: true
-  min2read: false
-  readCount: false
+post_info:
+  word_count: false
+  read_time: false
+
+# Enable post mathjax render
+mathjax:
+  enable: false
+  cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 # Comments. Choose one by filling up the information
 comments:
   # Disqus comments
-  disqus_shortname: 
+  disqus:
+    enable: false
+    shortname: 
   # Gitalk
   gitalk:
     enable: false
     owner:
     repo:
     oauth:
-      accessToken: 
+      accessToken:
       clientId:
-      clientSecret: 
+      clientSecret:
     admin:
+
+# Footer config
+# ---------------------------------------------------------------
+footer:
+  author:
+  menu:
+    Home: /
+    Archives: /archives
+    Tags: /tags
+    Categories: /categories
+    About: /about
+  social_link:
+    twitter_url:
+    twitter_handle:
+    facebook_url:
+    github_url:
+    gitlab_url:
+    linkedin_url: 
+    mailto:
+
+# Tracking config
+# ---------------------------------------------------------------
 
 # Google Analytics Tracking ID
 google_analytics:
 
-# Busuanzi Staticals
+# Busuanzi Statistics
 busuanzi:
-  enable: true
-  cdn: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
-  totalTraffic: false
-  totalNumberOfvisitors: false 
-
-# set your own favicon
-favicon: /img/favicon.png
-
-# Social Accounts
-twitter_url:
-twitter_handle:
-facebook_url:
-github_url:
-gitlab_url:
-linkedin_url: 
-mailto: 
-
-# Enable post mathjax
-mathjax:
   enable: false
-  cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  cdn: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+  site_views: false
+  site_visitors: false
+  post_views: false

@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 text-center">
                 <ul class="list-inline">
-                    <% if (theme.twitter_url) { %>
+                    <% if (theme.footer.social_link.twitter_url) { %>
                         <li class="list-inline-item">
                             <a rel="external nofollow" href="<%- theme.twitter_url%>" target="_blank">
                                 <span class="fa-stack fa-lg">
@@ -17,7 +17,7 @@
                         </li>
                     <% } %>
 
-                    <% if (theme.facebook_url) { %>
+                    <% if (theme.footer.social_link.facebook_url) { %>
                         <li class="list-inline-item">
                             <a rel="external nofollow" href="<%- theme.facebook_url%>" target="_blank">
                                 <span class="fa-stack fa-lg">
@@ -28,7 +28,7 @@
                         </li>
                     <% } %>
 
-                    <% if (theme.github_url) { %>
+                    <% if (theme.footer.social_link.github_url) { %>
                         <li class="list-inline-item">
                             <a rel="external nofollow" href="<%- theme.github_url%>" target="_blank">
                                 <span class="fa-stack fa-lg">
@@ -39,7 +39,7 @@
                         </li>
                     <% } %>
 
-                    <% if (theme.linkedin_url) { %>
+                    <% if (theme.footer.social_link.linkedin_url) { %>
                         <li class="list-inline-item">
                             <a rel="external nofollow" href="<%- theme.linkedin_url%>" target="_blank">
                                 <span class="fa-stack fa-lg">
@@ -50,7 +50,7 @@
                         </li>
                     <% } %>
 
-                    <% if (theme.mailto) { %>
+                    <% if (theme.footer.social_link.mailto) { %>
                         <li class="list-inline-item">
                             <a rel="external nofollow" href="mailto:<%- theme.mailto%>" target="_blank">
                                 <span class="fa-stack fa-lg">
@@ -61,7 +61,7 @@
                         </li>
                     <% } %>
 
-                    <% if (theme.gitlab_url) { %>
+                    <% if (theme.footer.social_link.gitlab_url) { %>
                         <li>
                             <a rel="external nofollow" href="<%- theme.gitlab_url%>" target="_blank">
                                 <span class="fa-stack fa-lg">
@@ -73,23 +73,25 @@
                     <% } %>
                 </ul>
                 <p class="copyright text-muted footer-author">
-                    &copy; 2018-<%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
-                    <% if (theme.busuanzi && theme.busuanzi.totalTraffic) { %>
+                    &copy; <%= theme.start_year %>-<%= date(new Date(), 'YYYY') %> <a class="copyright-link text-muted" href="<%- theme.footer.author %>"><%= config.author || config.title %></a>
+                    &nbsp;|&nbsp;Powered by <a class="copyright-link text-muted" href="https://hexo.io/">Hexo</a>  
+                    &nbsp;|&nbsp;Theme <a class="copyright-link text-muted" href="https://github.com/luswdev/hexo-theme-clean.git">Clean</a>
+                    <% if (theme.busuanzi && theme.busuanzi.site_views) { %>
                         <span id="busuanzi_container_site_pv">
-                            &nbsp;|&nbsp;<i class="fas fa-eye"></i>&nbsp;&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;
+                            |&nbsp;<i class="fas fa-eye"></i>&nbsp;&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;
                         </span>
                     <% } %>
-                    <% if (theme.busuanzi && theme.busuanzi.totalNumberOfvisitors) { %>
+                    <% if (theme.busuanzi && theme.busuanzi.site_visitors) { %>
                         <span id="busuanzi_container_site_uv">
                             &nbsp;|&nbsp;<i class="fas fa-user-friends"></i>&nbsp;&nbsp;<span id="busuanzi_value_site_uv"></span>&nbsp;
                         </span>
                     <% } %>
                 </p>
                 <ul class="copyright text-muted footer-menu list-inline">
-                    <% for (var i in theme.footer_menu){ %>
+                    <% for (var i in theme.footer.menu){ %>
                         <li class="list-inline-item">
                             <a href="<%- theme.footer_menu[i].url ? url_for(theme.footer_menu[i].url) : url_for(theme.footer_menu[i]) %>">
-                                <% if (theme.footer_menu[i].icon) { %>
+                                <% if (theme.footer.menu[i].icon) { %>
                                     <i class="<%= theme.footer_menu[i].icon %> fa-stack-2x"></i>
                                 <% } else { %>
                                     <%= i %>

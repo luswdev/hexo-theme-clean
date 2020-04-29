@@ -197,6 +197,8 @@ subtitle: Standard Excerpts are not supported in Clean Blog but you can use subt
 
 ```
 
+---
+
 ## Tags page.
 
 > Follow these steps to add a `tags` page that contains all the tags in your site.

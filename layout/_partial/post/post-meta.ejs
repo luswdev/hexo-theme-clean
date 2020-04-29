@@ -13,17 +13,17 @@
         <%= page.date.format(config.date_format) %>
     <% } %>
     <!-- word count and read count -->
-    <% if (theme.postInfo.wordCount) { %>
+    <% if (theme.post_info.word_count) { %>
         &nbsp;|&nbsp;<i class="far fa-file-word fa-fw"></i>&nbsp;
         <%= wordcount(page.content) %>
     <% } %>
 
-    <% if (theme.postInfo.min2read) { %>
+    <% if (theme.post_info.read_time) { %>
         &nbsp;|&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;
         <%= min2read(page.content) %> <%= __('Minutes') %>
     <% } %>
 
-    <% if (theme.postInfo.readCount && theme.busuanzi && theme.busuanzi.enable) { %>
+    <% if (theme.busuanzi.post_views) { %>
         &nbsp;|&nbsp;<i class="far fa-eye fa-fw"></i>&nbsp;
         <span id="busuanzi_value_page_pv"></span>
     <% } %>
