@@ -14,7 +14,7 @@ index_cover: /img/home-bg.jpg
 
 # Archive page start year
 # Default with current year
-start_year: 2018
+start_year: 
 
 # Enable post toc
 toc: true
@@ -34,17 +34,17 @@ comments:
   disqus_shortname: 
   # Gitalk
   gitalk:
-    enable: true
-    owner: 'luswdev' 
-    repo: 'hexo-gitalk-comment'
+    enable: false
+    owner:
+    repo:
     oauth:
-      accessToken: 'b554e5cfdb57826c448b9b147bc46ccc7a872cfb'    
-      clientId: '97c34b7bba491c6a5007'
-      clientSecret: '6140d208bae6bbbc69c65e3e332a46d090094fc8'
-    admin: 'luswdev'
+      accessToken: 
+      clientId:
+      clientSecret: 
+    admin:
 
 # Google Analytics Tracking ID
-google_analytics: UA-158078787-1
+google_analytics:
 
 # Busuanzi Staticals
 busuanzi:
