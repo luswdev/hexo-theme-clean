@@ -14,7 +14,9 @@
                         <%- page.subtitle %>
                     </h2>
                     <% } %>
-                    <%- partial('_partial/post/post-meta', {page: page}) %>  
+                    <% if (is_post(page)) { %>
+                        <%- partial('_partial/post/post-meta', {page: page}) %>  
+                    <% } %>
                 </div>
             </div>
         </div>
