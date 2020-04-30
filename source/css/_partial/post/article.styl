@@ -7,16 +7,25 @@ article {
         .row {
             h1, h2, h3, h4, h5, h6 {
                 margin-top: .5rem;
+
+                .header-anchor {
+                    color: #ddd;
+                    margin-left: -25px;
+                    opacity: 0;
+                    position: absolute;
+                    font-weight: normal;
+                }
+
+                &:hover {
+                    .header-anchor {
+                        opacity: 1;
+                    }
+                }
             }
 
             h2 {
                 border-bottom: 1px solid #eee;
                 padding-bottom: .3em;
-            }
-
-            .header-anchor {
-                color: #ddd;
-                padding-right: 5px
             }
 
             hr:not(.block-hr) {

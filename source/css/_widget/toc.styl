@@ -53,28 +53,47 @@
             sans-serif();
             font-size: .8em
             line-height: 1.6;
+
             &.expand {
                 ol {
                     max-height: unset;
                 }
             }
+
             ol {
                 transition: none;
                 padding-inline-start: 20px;
             }
+
             li.toc-list-item {
                 list-style: none;
+                color: #6c757d;
+                
                 a {
                     text-decoration: none;
                 }
-                &.is-active-li{
-                    serif();
+
+                a:hover {
+                    color: #000;
+                    &::before {
+                        width: 1px;
+                        background-color: #000;
+                    }
+                }
+
+                &.is-active-li {
+                    color: #000;
                 }
             }
         }
 
         .toc-menu {
             font-size: .8em;
+
+            a:hover {
+                color: #000 !important;
+                text-decoration: none;
+            }
         }
     }
 }
