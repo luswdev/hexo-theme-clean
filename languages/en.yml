@@ -1,5 +1,5 @@
-prev: Older Posts
-next: Newer Posts
+prev: Older
+next: Newer
 comment: Comments
 archive_a: Archives
 archive_b: "Archives: %s"
@@ -9,3 +9,4 @@ b2t: Back to top
 g2b: Go to bottom
 category_this: "Category: %s"
 tag_this: "Tag: %s:"
+search: Search
