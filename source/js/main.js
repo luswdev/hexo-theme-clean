@@ -85,12 +85,14 @@ $(document).ready( function () {
     })
 
     $('.back-to-top').on('click', function () {
-        const elem = $(this).attr("href");
-        window.location.href = elem;
+        $('body, html').stop(true, true).animate({
+            scrollTop: 0
+        }, 100, 'linear')
     });
 
     $('.go-to-bottom').on('click', function () {
-        const elem = $(this).attr("href");
-        window.location.href = elem;
+        $('body, html').stop(true, true).animate({
+            scrollTop: $(document.body)[0].scrollHeight
+        }, 100, 'linear')
     });
 });
