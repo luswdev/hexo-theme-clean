@@ -17,6 +17,7 @@ var searchFunc = function (path, search_id, content_id) {
             $input.addEventListener('input', function () {
                 var str = '<ul class=\"search-result-list list-unstyled\">';
                 var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                var resultLength = 0;
                 $resultContent.innerHTML = "";
                 if (this.value.trim().length <= 0) {
                     $resultContent.innerHTML = '<div class="search-empty text-center text-muted p-5"><i class="far fa-meh"></i></div>';
@@ -76,10 +77,15 @@ var searchFunc = function (path, search_id, content_id) {
                             str += "<p class=\"search-result my-3\">" + match_content + "...</p>"
                         }
                         str += "</li>";
+                        resultLength++;
                     }
                 });
 
                 str += "</ul>";
+
+                if (resultLength == 0) {
+                    str = '<div class="search-empty text-center text-muted p-5"><i class="far fa-meh"></i></div>';
+                }
 
                 $resultContent.innerHTML = str;
             });

@@ -1,16 +1,22 @@
 <!-- Modal -->
 <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content overflow-auto">
-        <div class="modal-body">
-            <button type="button" class="close pr-1 pb-3" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
-            <input type="text" class="form-control" placeholder="Searching keyword..." id="searchInput">
-            <div id="searchResult">
-                <div class="search-empty text-center text-muted p-5">
-                    <i class="far fa-meh"></i>
-                </div>
+    <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+        <div class="modal-content overflow-auto">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <i class="fas fa-search"></i>	
+                    <%- __('search') %>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
             </div>
-        </div> 
-      </div>
+            <div class="modal-body">
+                <input type="text" class="form-control" placeholder="Searching keyword..." id="searchInput">
+                <div id="searchResult">
+                    <div class="search-empty text-center text-muted p-5">
+                        <i class="far fa-meh"></i>
+                    </div>
+                </div>
+            </div> 
+        </div>
     </div>
 </div>
