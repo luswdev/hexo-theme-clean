@@ -13,20 +13,17 @@
         font-weight: 800;
         letter-spacing: 1px;
         padding: 9px 15px;
-        border: 1px solid #ddd;
-        background-color: #fff;
-        border-radius: 0;
-        position: fixed
-        right: 3%
-        bottom: 3%
-        z-index: 10
+        position: fixed;
+        right: 3%;
+        bottom: 3%;
+        z-index: 10;
         width: 40px;
         height: 40px;
+        opacity: .7;
         
         &:hover {
             color: #fff;
             background-color: brand-primary;
-            border-color: brand-primary;
         }
 
         i {
@@ -37,8 +34,7 @@
     &.show {
         button {
             background: brand-primary;
-            border-color: brand-primary;
-            color: white
+            color: white;
         }
     }
 
@@ -73,7 +69,7 @@
                     text-decoration: none;
                 }
 
-                a:hover {
+                &:not(.is-active-li) a:hover {
                     color: #000;
                     &::before {
                         width: 1px;

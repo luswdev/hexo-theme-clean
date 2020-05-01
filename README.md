@@ -3,7 +3,7 @@
 
 ![](https://i.imgur.com/mHzxF6j.png)
 
-[Demo](https://blog.lusw.dev)
+[Demo](https://lusw.dev)
 
 ## Features
 - Cover image for posts and pages
@@ -35,10 +35,10 @@ theme: clean
 ```
 
 ## Document
-You can learn how to use this theme by view full document [here](https://blog.lusw.dev/hexo/theme-clean-doc.html).
+You can learn how to use this theme by view full document [here](https://lusw.dev/hexo/theme-clean-doc.html).
 
 ## Creator
-This theme was created by [Blackrock Digital](https://github.com/BlackrockDigital), adapted for Hexo by [Jonathan Klughertz](http://www.codeblocq.com/) and modfy by [LuSkywalker](https://blog.lusw.dev/)
+This theme was created by [Blackrock Digital](https://github.com/BlackrockDigital), adapted for Hexo by [Jonathan Klughertz](http://www.codeblocq.com/) and modfy by [LuSkywalker](https://lusw.dev/)
 
 ## Version
 - V1.0.0

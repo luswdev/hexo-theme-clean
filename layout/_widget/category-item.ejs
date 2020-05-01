@@ -4,8 +4,7 @@
         <span class="badge badge-light"><%- category.length || 0 %></span>
     </a>
 <% } else { %>
-    <a href="<%- url_for(category.path) %>" class="btn btn-outline-dark m-2">
+    <a href="<%- url_for(category.path) %>" class="btn btn-light m-2">
         <%- category.name || "Untitled" %>
-        <span class="badge badge-light"><%- category.length || 0 %></span>
     </a>
 <% } %>
