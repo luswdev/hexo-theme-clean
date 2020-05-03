@@ -14,9 +14,6 @@
                         <%- page.subtitle %>
                     </h2>
                     <% } %>
-                    <% if (is_post(page)) { %>
-                        <%- partial('_partial/post/post-meta', {page: page}) %>  
-                    <% } %>
                 </div>
             </div>
         </div>
@@ -27,9 +24,11 @@
 <article>
     <div class="container">
         <div class="row">
-            
             <!-- Post Main Content -->
             <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                <% if (is_post(page)) { %>
+                    <%- partial('_partial/post/post-meta', {page: page}) %>  
+                <% } %>
                 <%- page.content %>
             </div>
 
