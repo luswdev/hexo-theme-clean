@@ -40,19 +40,19 @@ $(document).ready( function () {
 
     $('.expand-toggle').on('click', function () {
         $("#toc-content").toggleClass("expand");
-        $(".expand-text").toggle()
-        $(".close-text").toggle()
+        $(".expand-text").toggle();
+        $(".close-text").toggle();
     })
 
     $('.back-to-top').on('click', function () {
         $('body, html').stop(true, true).animate({
             scrollTop: 0
-        }, 100, 'linear')
+        }, 100, 'linear');
     });
 
     $('.go-to-bottom').on('click', function () {
         $('body, html').stop(true, true).animate({
             scrollTop: $(document.body)[0].scrollHeight
-        }, 100, 'linear')
+        }, 100, 'linear');
     });
 });
