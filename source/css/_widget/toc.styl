@@ -42,12 +42,15 @@
         right: 0;
         left: auto;
         margin-bottom: calc(3%+50px)
-        width: 15vw;
+        max-width: 40vw;
+        width: 20vw;
         box-shadow: 0 6px 12px rgba( 0, 0, 0, .175 );
 
         #toc-content {
             sans-serif();
-            font-size: .8em
+            max-height: 70vh;
+            overflow: auto;
+            font-size: .8em;
             line-height: 1.6;
 
             &.expand {

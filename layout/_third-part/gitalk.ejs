@@ -15,6 +15,7 @@
             owner: '<%- theme.comments.gitalk.owner %>',
             admin: <%- JSON.stringify(theme.comments.gitalk.admin) %>,
             id: '<%- date(page.date, 'YYYY-MM-DD HH:mm:ss') %>',
+            title: '<%- page.title %>',
             distractionFreeMode: false  // Facebook-like distraction free mode
         });
         gitalk.render('gitalk-container');
