@@ -1,9 +1,9 @@
 # <div align="center">Hexo Theme Clean</div>
 <p align="center">
-<a href="https://github.com/luswdev/hexo-theme-clean/blob/master/LICENSE"><img src="https://camo.githubusercontent.com/9248b53372a209bb834500c9516cc93e9c708aac/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f6c7573776465762f6865786f2d7468656d652d636c65616e2e737667" alt="GitHub license" data-canonical-src="https://img.shields.io/github/license/luswdev/hexo-theme-clean.svg" style="max-width:100%;"></a>
-<a href="https://github.com/luswdev/hexo-theme-clean/releases/"><img src="https://camo.githubusercontent.com/45adc6104c1e2450113220f238f4fc5370f9d1c4/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f72656c656173652f6c7573776465762f6865786f2d7468656d652d636c65616e2e737667" alt="GitHub release" data-canonical-src="https://img.shields.io/github/release/luswdev/hexo-theme-clean.svg" style="max-width:100%;"></a>
-<a href="https://hexo.io/" rel="nofollow"><img src="https://camo.githubusercontent.com/1194f35df3f477c4604a24a27282ac7be1bc0a77/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f6c6162656c3d4865786f266d6573736167653d2533453d342e302e3026636f6c6f723d626c7565" alt="Hexo" data-canonical-src="https://img.shields.io/static/v1?label=Hexo&amp;message=%3E=4.0.0&amp;color=blue" style="max-width:100%;"></a>
-<a href="https://github.com/luswdev/hexo-theme-clean/releases/"><img src="https://camo.githubusercontent.com/2b004277e3a34aa12ab8b95245666924d484f918/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f646f776e6c6f6164732f4e61657265656e2f5374726170446f776e2e6a732f746f74616c2e737667" alt="Github all releases" data-canonical-src="https://img.shields.io/github/downloads/luswdev/hexo-theme-clean/total.svg" style="max-width:100%;"></a>
+<a href="https://github.com/luswdev/hexo-theme-clean/blob/master/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/luswdev/hexo-theme-clean?style=for-the-badge"></a>
+<a href="https://github.com/luswdev/hexo-theme-clean/releases/"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/luswdev/hexo-theme-clean?style=for-the-badge"></a>
+<a href="https://hexo.io/" rel="nofollow"><img alt="Hexo" src="https://img.shields.io/badge/Hexo->=4.0.0-blue?style=for-the-badge&logo=hexo"></a>
+<a href="https://github.com/luswdev/hexo-theme-clean/releases/"><img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/luswdev/hexo-theme-clean/total?style=for-the-badge"></a>
 </p>
 
 <p align="center">
