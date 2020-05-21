@@ -1,9 +1,9 @@
 # Hexo Theme Clean
 > This is a theme base on [Hexo Clean Blog Theme](https://github.com/klugjo/hexo-theme-clean-blog), and modfy for more feature and coding style.
 
-![](https://i.imgur.com/mHzxF6j.png)
+![](https://i.imgur.com/lliGH5M.png)
 
-[Demo](https://lusw.dev)
+Live demo [HERE](https://lusw.dev)
 
 ## Features
 - Cover image for posts and pages
