@@ -1,11 +1,16 @@
-# Hexo Theme Clean
+# **Hexo Theme Clean**
+[![GitHub license](https://img.shields.io/github/license/luswdev/hexo-theme-clean.svg)](https://github.com/luswdev/hexo-theme-clean/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/luswdev/hexo-theme-clean.svg)](https://github.com/luswdev/hexo-theme-clean/releases/)
+[![Hexo](https://img.shields.io/static/v1?label=Hexo&message=>=4.0.0&color=blue)](https://hexo.io/)
+[![Github all releases](https://img.shields.io/github/downloads/luswdev/hexo-theme-clean/total.svg)](https://github.com/luswdev/hexo-theme-clean/releases/)
+
 > This is a theme base on [Hexo Clean Blog Theme](https://github.com/klugjo/hexo-theme-clean-blog), and modfy for more feature and coding style.
 
 ![](https://i.imgur.com/lliGH5M.png)
 
 Live demo [HERE](https://lusw.dev)
 
-## Features
+## **Features**
 - Cover image for posts and pages
 - Post toc
 - Code syntax highlighting
@@ -19,7 +24,7 @@ Live demo [HERE](https://lusw.dev)
 - Pin post at home page support
 - Hexo local search 
 
-## Installation
+## **Installation**
 - Clone into your hexo blog directory
 ```
 $ git clone https://github.com/luswdev/hexo-theme-clean.git themes/clean
@@ -34,15 +39,12 @@ Then update your blog's main `_config.yml` to set the theme to `clean`:
 theme: clean
 ```
 
-## Document
+## **Document**
 You can learn how to use this theme by view full document [here](https://lusw.dev/posts/hexo/theme-clean-doc.html).
 
-## Creator
+## **Creator**
 This theme was created by [Blackrock Digital](https://github.com/BlackrockDigital), adapted for Hexo by [Jonathan Klughertz](http://www.codeblocq.com/) and modfy by [LuSkywalker](https://lusw.dev/)
 
-## Version
+## **Version**
 - V1.0.0
     - Base fuction support.
-
-## License
-MIT
