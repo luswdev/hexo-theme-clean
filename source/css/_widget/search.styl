@@ -13,6 +13,38 @@
 }
 
 #searchModal {
+
+    .modal-header { 
+        padding: .5rem 1rem;
+
+        input {
+            border: 0;
+
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+
+        ::placeholder { 
+            color: #BDBDBD;
+            opacity: 1; 
+        }
+
+        :-ms-input-placeholder { 
+            color: #BDBDBD;
+        }
+
+        ::-ms-input-placeholder { 
+            color: #BDBDBD;
+        }
+
+        .close {
+            padding: 0 1rem;
+            align-self: center;
+        }
+    }
+
     .search-empty {
         i {
             font-size: 4rem;
@@ -51,4 +83,3 @@
         }
     }
 }
-

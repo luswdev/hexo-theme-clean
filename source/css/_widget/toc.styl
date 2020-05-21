@@ -23,7 +23,7 @@
         
         &:hover {
             color: #fff;
-            background-color: brand-primary;
+            background-color: gray-dark;
         }
 
         i {
@@ -33,7 +33,7 @@
 
     &.show {
         button {
-            background: brand-primary;
+            background: gray-dark;
             color: white;
         }
     }
@@ -66,7 +66,7 @@
 
             li.toc-list-item {
                 list-style: none;
-                color: #6c757d;
+                color: color-meta;
                 
                 a {
                     text-decoration: none;
@@ -89,9 +89,13 @@
         .toc-menu {
             font-size: .8em;
 
-            a:hover {
-                color: #000 !important;
-                text-decoration: none;
+            a {
+                color: color-meta;
+
+                &:hover {
+                    color: #000 !important;
+                    text-decoration: none;
+                }
             }
         }
     }

@@ -14,13 +14,36 @@ footer {
         font-size: 14px;
         margin-top: 0;
         margin-bottom: 0;
+        color: color-meta;
+
+        a {
+            color: color-meta;
+            text-decoration: none;
+        }
+
+        .copyright-split {
+            color: color-border;
+            font-size: .8em;
+            vertical-align: text-bottom;
+        }
     }
 
     .footer-menu {
         margin-top: 1.5rem;
+        margin-bottom: 1rem;
 
         li {
             margin-right: 0 !important;
+            color: color-border;
+
+            a {
+                color: gray-dark;
+                font-size: 1.2em;
+
+                &:hover {
+                    color: brand-primary;
+                }
+            }
         }
     }
 }

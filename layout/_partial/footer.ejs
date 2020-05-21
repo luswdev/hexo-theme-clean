@@ -72,12 +72,12 @@
                         </li>
                     <% } %>
                 </ul>
-                <ul class="copyright text-muted footer-menu list-inline">
+                <ul class="copyright footer-menu list-inline">
                     <% var item_count = 0 %>
                     <% for (var i in theme.footer.menu){ %>
                         <li class="list-inline-item">
                             <% if (item_count != 0) { %>
-                                &nbsp;|&nbsp;
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
                             <% } %>
                             <% item_count += 1 %>
                             <a href="<%- theme.footer.menu[i].url ? url_for(theme.footer.menu[i].url) : url_for(theme.footer.menu[i]) %>">
@@ -90,20 +90,22 @@
                         </li>
                     <% } %>
                 </ul>
-                <p class="copyright text-muted footer-author">
+                <p class="copyright footer-author">
                     &copy; <%= theme.start_year %>-<%= date(new Date(), 'YYYY') %> 
-                    <a rel="external" class="copyright-link text-muted" href="<%- theme.footer.author %>" target="_blank"><%= config.author || config.title %></a><br/>
-                    Powered by <a rel="external" class="copyright-link text-muted" href="https://hexo.io/" target="_blank">Hexo</a>  
-                    &nbsp;|&nbsp;Theme <a rel="external" class="copyright-link text-muted" href="https://github.com/luswdev/hexo-theme-clean.git" target="_blank">Clean</a>
+                    <a rel="external" class="copyright-link" href="<%- theme.footer.author %>" target="_blank"><%= config.author || config.title %></a><br/>
+                    Powered by <a rel="external" class="copyright-link" href="https://hexo.io/" target="_blank">Hexo</a>  
+                    <span class="copyright-split">&nbsp;|&nbsp;&nbsp;</span>
+                    Theme <a rel="external" class="copyright-link" href="https://github.com/luswdev/hexo-theme-clean.git" target="_blank">Clean</a>
                     <% if (theme.busuanzi && theme.busuanzi.site_views) { %>
                         <br/>
                         <span id="busuanzi_container_site_pv">
-                            |&nbsp;<i class="fas fa-eye"></i>&nbsp;&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;
+                            <i class="fas fa-eye"></i>&nbsp;&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;
                         </span>
                     <% } %>
                     <% if (theme.busuanzi && theme.busuanzi.site_visitors) { %>
                         <span id="busuanzi_container_site_uv">
-                            &nbsp;|&nbsp;<i class="fas fa-user-friends"></i>&nbsp;&nbsp;<span id="busuanzi_value_site_uv"></span>&nbsp;
+                            <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            <i class="fas fa-user-friends"></i>&nbsp;&nbsp;<span id="busuanzi_value_site_uv"></span>&nbsp;
                         </span>
                     <% } %>
                 </p>
