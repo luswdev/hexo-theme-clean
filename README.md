@@ -10,7 +10,7 @@
 This is a theme base on <a href="https://github.com/klugjo/hexo-theme-clean-blog">Hexo Clean Blog Theme</a>, and modfy for more feature and coding style.
 </p>
 
-![](https://i.imgur.com/lliGH5M.png)
+![](https://i.imgur.com/UU7fFvE.png)
 
 ## Live Demo
 <p align="center">
