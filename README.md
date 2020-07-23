@@ -14,7 +14,7 @@ This is a theme base on <a href="https://github.com/klugjo/hexo-theme-clean-blog
 
 ## Live Demo
 <p align="center">
-➡️ <a href="https://lusw.dev">Demo</a>
+➡️ <a href="https://blog.lusw.dev">Demo</a>
 </p>
 
 ## Features
@@ -47,7 +47,7 @@ theme: clean
 ```
 
 ## Document
-You can learn how to use this theme by view full document [here](https://lusw.dev/posts/hexo/theme-clean-doc.html).
+You can learn how to use this theme by view full document [here](https://blog/lusw.dev/posts/hexo/theme-clean-doc.html).
 
 ## Creator
 This theme was created by [Blackrock Digital](https://github.com/BlackrockDigital), adapted for Hexo by [Jonathan Klughertz](http://www.codeblocq.com/) and modfy by [LuSkywalker](https://lusw.dev/)
