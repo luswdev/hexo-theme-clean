@@ -24,7 +24,7 @@ hexo.extend.filter.register('after_post_render', function (data) {
     /* footnote */
     data.content = data.content.replace(/<div id="footnotes"><hr>/g, '<div id="footnotes"><hr class="block-hr">');
     data.content = data.content.replace(/<div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: [\d]+px">/g, '<div id="footnotelist" class="card card-default"><div class="card-header">Reference</div><ol class="list-group list-group-flush" style="list-style: none; padding-left: 0; margin-left: 0px">');
-    data.content = data.content.replace(/<li id="fn:([\d]+)">/g, '<li id="fn:$1+" class="list-group-item">');
+    data.content = data.content.replace(/<li id="fn:([\d]+)">/g, '<li id="fn:$1" class="list-group-item">');
     data.content = data.content.replace(/<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: [-\d]+px">/g, '<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: 0px">');
 
     return data;

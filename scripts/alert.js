@@ -12,10 +12,10 @@
  */
 
 function alertContent (args, content) {
-    var class_name = args.join(' ') || 'secondary';
+    var className = args.join(' ') || 'secondary';
     var html = '';
     
-    html += '<div class="alert alert-' + class_name + '">';
+    html += '<div class="alert alert-' + className + '">';
     html += hexo.render.renderSync({text: content, engine: 'markdown'}).trim();
     html += '</div>';
 

@@ -11,7 +11,7 @@
                 <%= i %>
             </button>
         <% } else { %>
-            <button type="button" class="btn btn-light" onclick="javascript:window,location.href = '/archives/<%- i %>'">
+            <button type="button" class="btn btn-light" onclick="javascript:window,location.href = '<%- url_for('/archives/' + i) %>'">
                 <%= i %>
             </button>
         <% } %>
@@ -23,7 +23,7 @@
         <span class="badge badge-light"><%- site.posts.length || 0 %></span>
     </button>
 <% } else { %>
-    <a class="btn btn-light archives-filter-all" href="/archives/" role="button">
+    <a class="btn btn-light archives-filter-all" href="<%- url_for('/archives/') %>" role="button">
         All    
         <span class="badge badge-secondary"><%- site.posts.length || 0 %></span>
     </a>
