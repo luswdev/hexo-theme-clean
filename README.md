@@ -53,5 +53,9 @@ You can learn how to use this theme by view full document [here](https://blog/lu
 This theme was created by [Blackrock Digital](https://github.com/BlackrockDigital), adapted for Hexo by [Jonathan Klughertz](http://www.codeblocq.com/) and modfy by [LuSkywalker](https://lusw.dev/)
 
 ## Version
+- V1.1.0
+    - Fixed subdir bugs.
+    - Fixed footnote id bugs.
+    - Add Google Fonts for TC.
 - V1.0.0
     - Base fuction support.
