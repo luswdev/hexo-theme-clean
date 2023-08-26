@@ -49,6 +49,10 @@ comments:
       clientId:
       clientSecret:
     admin:
+  # Waline
+  waline:
+    enable: false
+    serverURL: 
 
 # Footer config
 # ---------------------------------------------------------------
